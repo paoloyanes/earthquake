@@ -1578,6 +1578,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 30b92673b9b7ef44c9c11a474d9910c9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 991e8973513e2ad408232c1afeb3a9df, type: 3}
+--- !u!20 &811499791 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4282858177528194765, guid: 0d78b6ba1772e664caa5990356cfa97c, type: 3}
+  m_PrefabInstance: {fileID: 4282858177404914622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &845433000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4033,3 +4038,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  gravity: -9.8
+  jumpHeight: 3
+--- !u!114 &4282858177404914630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4282858177404914623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158d6c17b294aa0409d3a8c3b5d71049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 811499791}
+  xSensitivity: 30
+  ySensitivity: 30

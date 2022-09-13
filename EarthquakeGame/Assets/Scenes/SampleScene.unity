@@ -4040,6 +4040,7 @@ MonoBehaviour:
   speed: 5
   gravity: -9.8
   jumpHeight: 3
+  crouchTimer: 0
 --- !u!114 &4282858177404914630
 MonoBehaviour:
   m_ObjectHideFlags: 0

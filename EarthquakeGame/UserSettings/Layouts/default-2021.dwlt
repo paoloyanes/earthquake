@@ -120,6 +120,7 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 128
 =======
 <<<<<<< HEAD
@@ -128,6 +129,9 @@ MonoBehaviour:
   controlID: 25
 >>>>>>> e7b471cfcbf94e274a75fbe5f63dcb4648eaf3d7
 >>>>>>> a493a0321cee8f4a122bfe5271e99d34897ef443
+=======
+  controlID: 131
+>>>>>>> parent of 561f24a (Fixed Bathroom Floor And Realigned Whiteboards)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,6 +157,7 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 129
 =======
 <<<<<<< HEAD
@@ -161,6 +166,9 @@ MonoBehaviour:
   controlID: 31
 >>>>>>> e7b471cfcbf94e274a75fbe5f63dcb4648eaf3d7
 >>>>>>> a493a0321cee8f4a122bfe5271e99d34897ef443
+=======
+  controlID: 71
+>>>>>>> parent of 561f24a (Fixed Bathroom Floor And Realigned Whiteboards)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,6 +194,7 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 130
 =======
 <<<<<<< HEAD
@@ -194,6 +203,9 @@ MonoBehaviour:
   controlID: 32
 >>>>>>> e7b471cfcbf94e274a75fbe5f63dcb4648eaf3d7
 >>>>>>> a493a0321cee8f4a122bfe5271e99d34897ef443
+=======
+  controlID: 72
+>>>>>>> parent of 561f24a (Fixed Bathroom Floor And Realigned Whiteboards)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -425,10 +437,17 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 32fbffff
+=======
+      scrollPos: {x: 0, y: 768}
+      m_SelectedIDs: ae690000
+      m_LastClickedID: 27054
+      m_ExpandedIDs: 34fbffffde650000ac740000
+>>>>>>> parent of 561f24a (Fixed Bathroom Floor And Realigned Whiteboards)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -678,6 +697,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 4.83323, y: 19.168915, z: -26.182991}
     speed: 2
     m_Value: {x: 4.83323, y: 19.168915, z: -26.182991}
@@ -692,6 +712,11 @@ MonoBehaviour:
     m_Value: {x: 6.7103205, y: 14.16809, z: -6.6408386}
 >>>>>>> e7b471cfcbf94e274a75fbe5f63dcb4648eaf3d7
 >>>>>>> a493a0321cee8f4a122bfe5271e99d34897ef443
+=======
+    m_Target: {x: -0.78934956, y: 9.681761, z: -4.3084283}
+    speed: 2
+    m_Value: {x: -0.78934956, y: 9.681761, z: -4.3084283}
+>>>>>>> parent of 561f24a (Fixed Bathroom Floor And Realigned Whiteboards)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -739,12 +764,18 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> a493a0321cee8f4a122bfe5271e99d34897ef443
     m_Target: {x: 0.23639248, y: 0.4726405, z: -0.13325924, w: 0.838444}
     speed: 2
     m_Value: {x: 0.23804872, y: 0.46991977, z: -0.13325338, w: 0.83949494}
+=======
+    m_Target: {x: -0.0404885, y: -0.0032748072, z: 0.000118800635, w: -0.99919325}
+    speed: 2
+    m_Value: {x: -0.04198646, y: -0.0032745644, z: 0.00012371078, w: -0.9991128}
+>>>>>>> parent of 561f24a (Fixed Bathroom Floor And Realigned Whiteboards)
   m_Size:
     m_Target: 7.9183426
     speed: 2
@@ -1312,19 +1343,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Programs\Unity\Unity Projects\earthquake\EarthquakeGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 92890000
     m_LastClickedID: 35218
@@ -1340,6 +1372,11 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000bc84000000ca9a3b
 >>>>>>> e7b471cfcbf94e274a75fbe5f63dcb4648eaf3d7
 >>>>>>> a493a0321cee8f4a122bfe5271e99d34897ef443
+=======
+    m_SelectedIDs: 30840000
+    m_LastClickedID: 33840
+    m_ExpandedIDs: 000000001e84000000ca9a3b
+>>>>>>> parent of 561f24a (Fixed Bathroom Floor And Realigned Whiteboards)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1368,6 +1405,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000082890000
 =======
 <<<<<<< HEAD
@@ -1376,6 +1414,9 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000bc840000
 >>>>>>> e7b471cfcbf94e274a75fbe5f63dcb4648eaf3d7
 >>>>>>> a493a0321cee8f4a122bfe5271e99d34897ef443
+=======
+    m_ExpandedIDs: 000000001e840000
+>>>>>>> parent of 561f24a (Fixed Bathroom Floor And Realigned Whiteboards)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

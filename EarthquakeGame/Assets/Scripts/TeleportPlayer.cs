@@ -35,6 +35,10 @@ public class TeleportPlayer : MonoBehaviour
             {
                 PlayerStartingLocation(location17);
             }
+            else
+            {
+                PlayerStartingLocation(location01);
+            }
             isDone = true;
         }
         

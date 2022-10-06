@@ -5,4 +5,5 @@ using UnityEngine;
 public class StateNameController : MonoBehaviour
 {
     public static int selectStartingLocationDropdown;
+    public static float intensityValue;
 }

@@ -9,20 +9,34 @@ public class EarthquakeSimulation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(EarthquakeCoroutine());
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    //void Update()
+    //{
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
+    //    if (Input.GetKeyDown(KeyCode.Alpha1))
+    //    {
 
-            StartCoroutine(earthquakeSimulation.Shake(5.0f, StateNameController.intensityValue/100));
+            
 
-        }
+    //    }
 
         
+    //}
+
+    IEnumerator EarthquakeCoroutine()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+
+        if(StateNameController.intensityValue < 2)
+        {
+            StartCoroutine(earthquakeSimulation.Shake(5.0f, 0.02f));
+        }
+        else
+        {
+            StartCoroutine(earthquakeSimulation.Shake(5.0f, StateNameController.intensityValue / 100));
+        }
     }
 }

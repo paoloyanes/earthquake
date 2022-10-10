@@ -6,6 +6,7 @@ using TMPro;
 
 public class IntensityLevelScript : MonoBehaviour
 {
+    //This is for the Slider
     public Slider intensityLevel;
     public TextMeshProUGUI intensityValue;
 

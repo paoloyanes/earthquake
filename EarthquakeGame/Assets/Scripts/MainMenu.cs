@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        StateNameController.isStartGameClicked = true;
         SceneManager.LoadScene(1);
     }
 

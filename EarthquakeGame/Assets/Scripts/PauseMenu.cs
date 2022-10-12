@@ -50,6 +50,7 @@ public class PauseMenu : MonoBehaviour
         gameObject.SetActive(false);
         ContinueTheGame();
         promptMessage.SetActive(false);
+        StateNameController.isStartGameClicked = false;
         SceneManager.LoadScene(0, LoadSceneMode.Additive);
         //Time.timeScale = 1f; this might be not required
         //SceneManager.LoadScene(1);

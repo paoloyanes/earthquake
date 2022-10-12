@@ -30,6 +30,12 @@ public class EarthquakeSimulation : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3f);
 
+        if (StateNameController.isStartGameClicked)
+        {
+            StateNameController.isEarthquakeSimulationRunning = true;
+        }
+        
+
         if(StateNameController.intensityValue < 2)
         {
             StartCoroutine(earthquakeSimulation.Shake(5.0f, 0.02f));

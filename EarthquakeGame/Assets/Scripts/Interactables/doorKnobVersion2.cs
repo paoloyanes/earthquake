@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class doorKnobVersion2 : Interactable
 {
@@ -23,7 +24,12 @@ public class doorKnobVersion2 : Interactable
     //this function is where we will design our interaction using code :)
     protected override void Interact()
     {
+
         doorOpenVersion2 = !doorOpenVersion2;
         doorVersion2.GetComponent<Animator>().SetBool("IsOpenVersion2", doorOpenVersion2);
+        
     }
+
+
+    
 }

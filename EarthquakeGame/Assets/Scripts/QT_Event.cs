@@ -41,6 +41,7 @@ public class QT_Event : MonoBehaviour
             currentTime = 0f;
             countdownGO.SetActive(false);
             StateNameController.isEarthquakeSimulationRunning = false;
+            Destroy(GameObject.FindWithTag("Lose"));
         }
     }
 }

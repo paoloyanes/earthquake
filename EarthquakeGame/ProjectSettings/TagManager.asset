@@ -7,6 +7,8 @@ TagManager:
   - Arrow
   - DropCoverHold
   - Lose
+  - ObjTrig3
+  - Lose2
   layers:
   - Default
   - TransparentFX

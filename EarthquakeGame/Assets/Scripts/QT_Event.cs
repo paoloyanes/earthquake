@@ -6,11 +6,14 @@ using TMPro;
 
 public class QT_Event : MonoBehaviour
 {
+
     [SerializeField] TextMeshProUGUI countdown;
     public GameObject countdownGO;
     float currentTime;
     float startingTime = 8f;
     public string eventSuccess = "n";
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +44,24 @@ public class QT_Event : MonoBehaviour
             currentTime = 0f;
             countdownGO.SetActive(false);
             StateNameController.isEarthquakeSimulationRunning = false;
+
+            // Added code for triggering lose screen
             Destroy(GameObject.FindWithTag("Lose"));
+            StartCoroutine(objTimer()); // Delete Trigger to 30s Lose Screen
+            
+
+
         }
     }
+
+     private IEnumerator objTimer()
+    {
+        yield return new WaitForSeconds(38f);
+        Destroy(GameObject.FindWithTag("Lose2"));
+    }
+
+    
+
+        
 }
+

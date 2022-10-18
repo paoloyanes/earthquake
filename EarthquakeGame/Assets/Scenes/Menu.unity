@@ -1089,11 +1089,11 @@ MonoBehaviour:
   m_Value: -1
   m_Options:
     m_Options:
-    - m_Text: 1st-Floor-Classroom-1
+    - m_Text: 1st Floor Classroom
       m_Image: {fileID: 0}
-    - m_Text: 2nd-Floor-Classroom-17
+    - m_Text: 2nd Floor Classroom
       m_Image: {fileID: 0}
-    - m_Text: 3rd-Floor-Classroom-12
+    - m_Text: 3rd Floor Classroom
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

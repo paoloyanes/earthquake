@@ -25,7 +25,7 @@ public class Objective : MonoBehaviour
         objSFX.Play();
         theObjective.SetActive(true);
         theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-        theText.GetComponent<Text>().text = "Follow the arrows in order to evacuate the building.";
+        theText.GetComponent<Text>().text = "Find the Exit and the head to the Field.";
         yield return new WaitForSeconds(5f);
         theTrigger.SetActive(false);
     }

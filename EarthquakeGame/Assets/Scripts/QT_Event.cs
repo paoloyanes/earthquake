@@ -56,7 +56,7 @@ public class QT_Event : MonoBehaviour
 
      private IEnumerator objTimer()
     {
-        yield return new WaitForSeconds(38f);
+        yield return new WaitForSeconds(30f);
         Destroy(GameObject.FindWithTag("Lose2"));
     }
 

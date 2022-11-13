@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
+    public AudioSource earthquakeSound; // added by eljan
     public IEnumerator Shake(float duration, float magnitude)
+
     {
         Vector3 originalPos = transform.localPosition;
 
         float elapsed = 0.0f;
-        
+
+        earthquakeSound.Play();
+
         while (elapsed < duration)
         {
+            
             float x = Random.Range(-1f, 1f) * magnitude;
             //float y = Random.Range(-1f, 1f) * magnitude;
 
@@ -21,6 +26,8 @@ public class CameraShake : MonoBehaviour
 
             yield return null;
         }
+
+        earthquakeSound.Stop();
 
         transform.localPosition = originalPos;
     }

@@ -19,6 +19,8 @@ public class PlayAgain : MonoBehaviour
 
     public void LoadGame()
     {
+        Objective1.getOutClass = false;
+        PickUpController.slotFull = false;
         SceneManager.LoadScene("SampleScene");
     }
 }

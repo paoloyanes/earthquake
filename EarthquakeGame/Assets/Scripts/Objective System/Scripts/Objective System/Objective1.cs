@@ -17,8 +17,12 @@ public class Objective1 : MonoBehaviour
     public Text countdownText;
     public bool countdownTrigger = false;
 
+    public static bool getOutClass;
+    public bool missionObjDone = false;
+
     void Start()
     {
+        getOutClass = false;
         currentTime = startingTime;
         StartCoroutine(missionObj());
 
@@ -37,8 +41,20 @@ public class Objective1 : MonoBehaviour
                 countdownText.text = " ";
             }
         }
-        
-        
+
+        if (missionObjDone == true)
+        {
+            if (getOutClass == false)
+            {
+                if (PickUpController.slotFull == true)
+                {
+                    getOutClass = true;
+                    StartCoroutine(missionObj2());
+                }
+            }
+        }
+
+
     }
 
     private IEnumerator missionObj()
@@ -54,13 +70,41 @@ public class Objective1 : MonoBehaviour
         objSFX.Play();
         theObjective.SetActive(true);
         theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-        theText.GetComponent<Text>().text = "Wait for at least 30 seconds in order to avoid sudden aftershocks.";
+        theText.GetComponent<Text>().text = "Wait for at least 30 seconds in case of sudden aftershocks.";
         countdownTrigger = true;
         yield return new WaitForSeconds(30f);
+
+
+        if (PickUpController.slotFull == false)
+        {
+            objSFX.Play();
+            theObjective.SetActive(true);
+            theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
+            theText.GetComponent<Text>().text = "Pick up a hard object to cover your head with.";
+            missionObjDone = true;
+            getOutClass = false;
+            yield return getOutClass;
+        }
+        else
+        {
+            objSFX.Play();
+            theObjective.SetActive(true);
+            theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
+            theText.GetComponent<Text>().text = "Get out of the Classroom";
+            getOutClass = true;
+        }
+    }
+
+    private IEnumerator missionObj2()
+    {
         objSFX.Play();
         theObjective.SetActive(true);
         theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-        theText.GetComponent<Text>().text = "Get out of the classroom.";
+        theText.GetComponent<Text>().text = "Get out of the Classroom";
+
+        getOutClass = true;
+
+        yield return getOutClass;
     }
 
 }

@@ -18,7 +18,7 @@ public class FailCounter3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int FCObj3 = LoseScene2.obj2failcounter;
+        int FCObj3 = LoseScene3.obj3failcounter;
         ValueText.text = FCObj3.ToString();
     }
 }

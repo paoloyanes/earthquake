@@ -37,7 +37,7 @@ public class QT_Event : MonoBehaviour
             eventSuccess = "y";
         }
         currentTime -= 1 * Time.deltaTime;
-        countdown.text = currentTime.ToString("0");
+        //countdown.text = currentTime.ToString("0");
 
         if(currentTime <= 0f)
         {

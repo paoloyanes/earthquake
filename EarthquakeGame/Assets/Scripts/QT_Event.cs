@@ -10,7 +10,7 @@ public class QT_Event : MonoBehaviour
     [SerializeField] TextMeshProUGUI countdown;
     public GameObject countdownGO;
     float currentTime;
-    float startingTime = 8f;
+    float startingTime = 18f;
     public string eventSuccess = "n";
 
 

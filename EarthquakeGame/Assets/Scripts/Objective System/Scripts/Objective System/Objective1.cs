@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Objective1 : MonoBehaviour
 {
@@ -42,18 +43,6 @@ public class Objective1 : MonoBehaviour
             }
         }
 
-        if (missionObjDone == true)
-        {
-            if (getOutClass == false)
-            {
-                if (PickUpController.slotFull == true)
-                {
-                    getOutClass = true;
-                    StartCoroutine(missionObj2());
-                }
-            }
-        }
-
 
     }
 
@@ -64,47 +53,34 @@ public class Objective1 : MonoBehaviour
         objSFX.Play();
         theObjective.SetActive(true);
         theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-        theText.GetComponent<Text>().text = "Wait for the shaking to stop.";
+        theText.GetComponent<Text>().text = "Pickup something hard and DUCK COVER AND HOLD!";
         // objective 2
-        yield return new WaitForSeconds(8f);
-        objSFX.Play();
-        theObjective.SetActive(true);
-        theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-        theText.GetComponent<Text>().text = "Wait for at least 30 seconds in case of sudden aftershocks.";
-        countdownTrigger = true;
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(15f);
 
-
-        if (PickUpController.slotFull == false)
+        if (PlayerMotor.crouching == true && PickUpController.slotFull == true)
         {
             objSFX.Play();
             theObjective.SetActive(true);
             theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-            theText.GetComponent<Text>().text = "Pick up a hard object to cover your head with.";
-            missionObjDone = true;
-            getOutClass = false;
-            yield return getOutClass;
-        }
-        else
-        {
+            theText.GetComponent<Text>().text = "Wait for at least 30 seconds in case of sudden aftershocks.";
+            countdownTrigger = true;
+            yield return new WaitForSeconds(30f);
             objSFX.Play();
             theObjective.SetActive(true);
             theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
             theText.GetComponent<Text>().text = "Get out of the Classroom";
             getOutClass = true;
+            
         }
+        else
+        {
+            LoseScene3.obj3failcounter ++;
+            SceneManager.LoadScene(5);
+        }
+
+
+
     }
 
-    private IEnumerator missionObj2()
-    {
-        objSFX.Play();
-        theObjective.SetActive(true);
-        theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-        theText.GetComponent<Text>().text = "Get out of the Classroom";
-
-        getOutClass = true;
-
-        yield return getOutClass;
-    }
 
 }

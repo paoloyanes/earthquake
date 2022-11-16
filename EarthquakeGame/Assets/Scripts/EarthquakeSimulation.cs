@@ -38,11 +38,11 @@ public class EarthquakeSimulation : MonoBehaviour
 
         if(StateNameController.intensityValue < 2)
         {
-            StartCoroutine(earthquakeSimulation.Shake(5.0f, 0.02f));
+            StartCoroutine(earthquakeSimulation.Shake(15.0f, 0.02f));
         }
         else
         {
-            StartCoroutine(earthquakeSimulation.Shake(5.0f, StateNameController.intensityValue / 100));
+            StartCoroutine(earthquakeSimulation.Shake(15.0f, StateNameController.intensityValue / 100));
         }
     }
 }

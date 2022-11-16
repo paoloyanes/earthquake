@@ -34,7 +34,7 @@ public class LoseScene3 : MonoBehaviour
             if(collisionGameObject.tag == "Player"){
                 //loadscene 3 = Objective 1: stay in classroom because of ongoing earthquake
                 //loadscene 4 = Objective 2: stay in classroom because of possible aftershock
-                //loadscene 5 = Objective 3: Get something hard to cover your head with
+                //loadscene 5 = Objective 3: Get something hard to cover your head with while doing the DUCK COVER AND HOLD
                 //loadscene 6 = Objective 4: Getting to an open space like the field is your top priority
                 obj3failcounter++;
                 SceneManager.LoadScene(5);

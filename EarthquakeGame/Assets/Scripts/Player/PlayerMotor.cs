@@ -39,10 +39,12 @@ public class PlayerMotor : MonoBehaviour
             if (crouching)
             {
                 controller.height = Mathf.Lerp(controller.height, 1f, p);
+                speed = 1;
             }
             else
             {
                 controller.height = Mathf.Lerp(controller.height, 2, p);
+                speed = 3;
             }
 
             if(p > 1)
@@ -91,14 +93,22 @@ public class PlayerMotor : MonoBehaviour
 
     public void Sprint()
     {
-        sprinting = !sprinting;
-        if (sprinting)
+        if (crouching)
         {
-            speed = 8;
+            speed = 1;
         }
         else
         {
-            speed = 3;
+            sprinting = !sprinting;
+            if (sprinting)
+            {
+                speed = 8;
+            }
+            else
+            {
+                speed = 3;
+            }
         }
+
     }
 }

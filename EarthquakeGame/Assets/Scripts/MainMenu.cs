@@ -8,9 +8,17 @@ public class MainMenu : MonoBehaviour
 {
     public TMPro.TMP_Dropdown selectStartingLocation;
 
+    public void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void StartGame()
     {
+
         StateNameController.isStartGameClicked = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(1);
     }
 

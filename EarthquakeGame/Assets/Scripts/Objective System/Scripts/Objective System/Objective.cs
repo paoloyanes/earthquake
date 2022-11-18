@@ -26,6 +26,7 @@ public class Objective : MonoBehaviour
 
     private IEnumerator missionObj()
     {
+        //Objective 3
         objSFX.Play();
         theObjective.SetActive(true);
         theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");

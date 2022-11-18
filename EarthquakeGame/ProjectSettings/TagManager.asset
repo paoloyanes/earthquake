@@ -10,6 +10,8 @@ TagManager:
   - ObjTrig3
   - Lose2
   - Lose3
+  - LoseExit1stFloor
+  - LoseExit2ndFloor
   layers:
   - Default
   - TransparentFX

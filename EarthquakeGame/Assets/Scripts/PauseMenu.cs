@@ -56,6 +56,7 @@ public class PauseMenu : MonoBehaviour
         promptMessage.SetActive(false);
         StateNameController.isStartGameClicked = false;
         StateNameController.intensityValue = 1;
+        StateNameController.selectStartingLocationDropdown = 0;
         SceneManager.LoadScene(0);
         //Time.timeScale = 1f; this might be not required
         //SceneManager.LoadScene(1);

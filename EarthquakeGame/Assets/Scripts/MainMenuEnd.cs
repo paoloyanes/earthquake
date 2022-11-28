@@ -19,6 +19,7 @@ public class MainMenuEnd : MonoBehaviour
 
     public void GoBackMainMenu()
     {
+        StateNameController.selectStartingLocationDropdown = 0;
         SceneManager.LoadScene("Menu");
     }
 }

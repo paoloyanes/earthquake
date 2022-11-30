@@ -8,7 +8,9 @@ public class TeleportPlayer : MonoBehaviour
 
     Vector3 location01, location12, location17;
 
-    bool isDone = false;
+    static public int teleportedLocation = 0;
+
+    static public bool isDone = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,14 +27,17 @@ public class TeleportPlayer : MonoBehaviour
         {
             if (StateNameController.selectStartingLocationDropdown == 0)
             {
+                teleportedLocation = 0;
                 PlayerStartingLocation(location01);
             }
             else if (StateNameController.selectStartingLocationDropdown == 1)
             {
+                teleportedLocation = 1;
                 PlayerStartingLocation(location17);
             }
             else if (StateNameController.selectStartingLocationDropdown == 2)
             {
+                teleportedLocation = 2;
                 PlayerStartingLocation(location12);
             }
             else
@@ -40,6 +45,7 @@ public class TeleportPlayer : MonoBehaviour
                 PlayerStartingLocation(location01);
             }
             isDone = true;
+            
         }
         
     }

@@ -21,7 +21,6 @@ public class PlayAgain : MonoBehaviour
     {
         Objective1.getOutClass = false;
         PickUpController.slotFull = false;
-        //StateNameController.selectStartingLocationDropdown = 0;
         SceneManager.LoadScene("SampleScene");
     }
 }

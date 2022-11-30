@@ -27,17 +27,14 @@ public class TeleportPlayer : MonoBehaviour
         {
             if (StateNameController.selectStartingLocationDropdown == 0)
             {
-                teleportedLocation = 0;
                 PlayerStartingLocation(location01);
             }
             else if (StateNameController.selectStartingLocationDropdown == 1)
             {
-                teleportedLocation = 1;
                 PlayerStartingLocation(location17);
             }
             else if (StateNameController.selectStartingLocationDropdown == 2)
             {
-                teleportedLocation = 2;
                 PlayerStartingLocation(location12);
             }
             else

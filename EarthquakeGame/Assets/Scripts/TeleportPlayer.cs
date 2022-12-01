@@ -10,7 +10,7 @@ public class TeleportPlayer : MonoBehaviour
 
     static public int teleportedLocation = 0;
 
-    static public bool isDone = false;
+    public bool isDone = false;
 
     // Start is called before the first frame update
     void Start()

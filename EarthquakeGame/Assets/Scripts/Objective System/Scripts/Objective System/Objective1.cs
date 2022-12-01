@@ -79,7 +79,7 @@ public class Objective1 : MonoBehaviour
             objSFX.Play();
             theObjective.SetActive(true);
             theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-            theText.GetComponent<Text>().text = "Wait for at least 30 seconds in case of sudden aftershocks.";
+            theText.GetComponent<Text>().text = "Incoming Aftershocks! Do the Drop, Cover, and Hold!";
             countdownTrigger = true;
             yield return new WaitForSeconds(30f);
             goodJobSFX.Play();

@@ -40,7 +40,6 @@ public class PickUpController : MonoBehaviour
         // Drop if equipped and "G" is pressed
         if (equipped && Input.GetKeyDown(KeyCode.G)) Drop();
 
-        print(slotFull);
     }
 
     private void PickUp()

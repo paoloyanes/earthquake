@@ -56,7 +56,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Crouch"",
-                    ""type"": ""Button"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""0786a2b6-9764-4ef6-b403-c15541171cf6"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",

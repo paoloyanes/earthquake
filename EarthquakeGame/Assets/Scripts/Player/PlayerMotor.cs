@@ -39,7 +39,7 @@ public class PlayerMotor : MonoBehaviour
             if (crouching)
             {
                 controller.height = Mathf.Lerp(controller.height, 1f, p);
-                speed = 1;
+                speed = 0;
             }
             else
             {

@@ -13,8 +13,6 @@ public class PlayerPath : MonoBehaviour
     [SerializeField]
     private float PathHeightOffset = 1.25f;
     [SerializeField]
-    private float SpawnHeightOffset = 1.5f;
-    [SerializeField]
     private float PathUpdateSpeed = 0.25f;
 
     private Collectable ActiveInstance;

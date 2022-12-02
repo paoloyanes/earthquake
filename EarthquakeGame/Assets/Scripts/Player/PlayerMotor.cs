@@ -16,8 +16,9 @@ public class PlayerMotor : MonoBehaviour
     private bool sprinting;
     public float crouchTimer;
 
-
-
+    [SerializeField]
+    private GameObject studentModel;
+    private bool isDropCoverHold = false;
 
 
     // Start is called before the first frame update
@@ -38,11 +39,15 @@ public class PlayerMotor : MonoBehaviour
 
             if (crouching)
             {
-                controller.height = Mathf.Lerp(controller.height, 1f, p);
+                //controller.height = Mathf.Lerp(controller.height, 1f, p);
                 speed = 0;
+                isDropCoverHold = true;
+                studentModel.GetComponent<Animator>().SetBool("isDropCoverHold", isDropCoverHold);
             }
             else
             {
+                isDropCoverHold = false;
+                studentModel.GetComponent<Animator>().SetBool("isDropCoverHold", isDropCoverHold);
                 controller.height = Mathf.Lerp(controller.height, 2, p);
                 speed = 3;
             }

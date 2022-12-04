@@ -5,6 +5,7 @@ using UnityEngine;
 public class EarthquakeSimulation : MonoBehaviour
 {
     public CameraShake earthquakeSimulation;
+    public CameraShake earthquakeSimulation2;
     
     // Start is called before the first frame update
     void Start()
@@ -39,10 +40,12 @@ public class EarthquakeSimulation : MonoBehaviour
         if(StateNameController.intensityValue < 2)
         {
             StartCoroutine(earthquakeSimulation.Shake(15.0f, 0.02f));
+            StartCoroutine(earthquakeSimulation2.Shake(15.0f, 0.02f));
         }
         else
         {
             StartCoroutine(earthquakeSimulation.Shake(15.0f, StateNameController.intensityValue / 100));
+            StartCoroutine(earthquakeSimulation2.Shake(15.0f, StateNameController.intensityValue / 100));
         }
     }
 }

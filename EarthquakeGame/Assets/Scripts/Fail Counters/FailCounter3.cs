@@ -8,7 +8,6 @@ public class FailCounter3 : MonoBehaviour
 
     public Text ValueText;
 
-    public int FCObj3;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +17,14 @@ public class FailCounter3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int FCObj3 = LoseScene3.obj3failcounter;
-        ValueText.text = FCObj3.ToString();
+        if(PF_Toggle.usedGuide)
+        {
+            ValueText.text = "Yes";
+        }
+        else
+        {
+            ValueText.text = "No";
+        }
+
     }
 }

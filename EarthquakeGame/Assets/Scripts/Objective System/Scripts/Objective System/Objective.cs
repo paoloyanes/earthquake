@@ -30,7 +30,7 @@ public class Objective : MonoBehaviour
         objSFX.Play();
         theObjective.SetActive(true);
         theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
-        theText.GetComponent<Text>().text = "Find the Exit and head to the Field.";
+        theText.GetComponent<Text>().text = "Find the Exit and head to the Field";
         theTrigger.SetActive(false);
         yield return new WaitForSeconds(5f);
     }

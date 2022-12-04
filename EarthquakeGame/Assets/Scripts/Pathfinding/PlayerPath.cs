@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerPath : MonoBehaviour
 {
@@ -15,11 +16,14 @@ public class PlayerPath : MonoBehaviour
     [SerializeField]
     private float PathUpdateSpeed = 0.10f;
 
+
+
     private Collectable ActiveInstance;
     private UnityEngine.AI.NavMeshTriangulation Triangulation;
     private Coroutine DrawPathCoroutine;
     private int starter = 1;
     private bool drawPathStarter = true;
+
 
 
 
@@ -36,6 +40,9 @@ public class PlayerPath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
+        
         if(drawPathStarter == true)
         {
             if(Objective1.getOutClass == true)
@@ -44,6 +51,8 @@ public class PlayerPath : MonoBehaviour
                 drawPathStarter = false;
             }
         }
+        
+
     }
 
     private IEnumerator DrawPathToEnd()

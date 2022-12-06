@@ -41,6 +41,7 @@ public class PlayerMotor : MonoBehaviour
             {
                 //controller.height = Mathf.Lerp(controller.height, 1f, p);
                 speed = 0;
+                studentModel.GetComponent<Animator>().SetBool("isWalkHandsUp", false);
                 isDropCoverHold = true;
                 studentModel.GetComponent<Animator>().SetBool("isDropCoverHold", isDropCoverHold);
             }
@@ -59,7 +60,6 @@ public class PlayerMotor : MonoBehaviour
             }
         }
 
-
     }
 
     // receive the inputs for our InputManager.cs  and apply them to our character controller :)
@@ -77,6 +77,16 @@ public class PlayerMotor : MonoBehaviour
         }
 
         controller.Move(playerVelocity * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.W) && sprinting != true || Input.GetKey(KeyCode.A) && sprinting != true || Input.GetKey(KeyCode.S) && sprinting != true || Input.GetKey(KeyCode.D) && sprinting != true)
+        {
+            studentModel.GetComponent<Animator>().SetBool("isWalkHandsUp", true);
+        }
+        else
+        {
+            studentModel.GetComponent<Animator>().SetBool("isWalkHandsUp", false);
+        }
+
     }
 
     public void Jump()
@@ -108,10 +118,12 @@ public class PlayerMotor : MonoBehaviour
             if (sprinting)
             {
                 speed = 8;
+                studentModel.GetComponent<Animator>().SetBool("isRunHandsUp", true);
             }
             else
             {
                 speed = 3;
+                studentModel.GetComponent<Animator>().SetBool("isRunHandsUp", false);
             }
         }
 

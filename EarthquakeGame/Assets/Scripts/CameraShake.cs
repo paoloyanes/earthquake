@@ -10,6 +10,7 @@ public class CameraShake : MonoBehaviour
     
 
     {
+        
         Vector3 originalPos = transform.localPosition;
 
         float elapsed = 0.0f;
@@ -19,6 +20,7 @@ public class CameraShake : MonoBehaviour
         while (elapsed < duration)
         {
             shaking = true;
+            StateNameController.isEarthquakeSimulationRunning = true;
             float x = Random.Range(-1f, 1f) * magnitude;
             //float y = Random.Range(-1f, 1f) * magnitude;
 
@@ -30,6 +32,7 @@ public class CameraShake : MonoBehaviour
         }
 
         shaking = false;
+        StateNameController.isEarthquakeSimulationRunning = false;
         earthquakeSound.Stop();
 
         transform.localPosition = originalPos;

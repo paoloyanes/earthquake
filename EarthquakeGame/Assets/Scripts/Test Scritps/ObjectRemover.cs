@@ -17,7 +17,7 @@ public class ObjectRemover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        intensityChecker = true;
     }
 
     // Update is called once per frame

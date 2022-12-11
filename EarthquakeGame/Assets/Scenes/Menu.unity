@@ -709,7 +709,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1st Floor Classroom
+  m_text: 1F - Classroom 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1089,11 +1089,65 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: 1st Floor Classroom
+    - m_Text: 1F - Classroom 1
       m_Image: {fileID: 0}
-    - m_Text: 2nd Floor Classroom
+    - m_Text: 2F - AVR 1 - B Classroom
       m_Image: {fileID: 0}
-    - m_Text: 3rd Floor Classroom
+    - m_Text: 3F - GCA 303
+      m_Image: {fileID: 0}
+    - m_Text: 1F - Right Wing CR Female
+      m_Image: {fileID: 0}
+    - m_Text: 1F - Right Wing CR Male
+      m_Image: {fileID: 0}
+    - m_Text: 1F - GCA 101 A
+      m_Image: {fileID: 0}
+    - m_Text: 1F - GCA 101 B
+      m_Image: {fileID: 0}
+    - m_Text: 1F - GCA 102
+      m_Image: {fileID: 0}
+    - m_Text: 1F - Unamed Room 1
+      m_Image: {fileID: 0}
+    - m_Text: 1F - Unamed Room 2
+      m_Image: {fileID: 0}
+    - m_Text: 1F - OSDS
+      m_Image: {fileID: 0}
+    - m_Text: 1F - CPT Clinic
+      m_Image: {fileID: 0}
+    - m_Text: 1F - CPT Room
+      m_Image: {fileID: 0}
+    - m_Text: 1F - Pump Room
+      m_Image: {fileID: 0}
+    - m_Text: 1F - GENSET Room
+      m_Image: {fileID: 0}
+    - m_Text: 1F - PFMO Stockroom
+      m_Image: {fileID: 0}
+    - m_Text: 2F - Right Wing CR Female
+      m_Image: {fileID: 0}
+    - m_Text: 2F - Right Wing CR Male
+      m_Image: {fileID: 0}
+    - m_Text: 2F - COA Office
+      m_Image: {fileID: 0}
+    - m_Text: 2F - Office Staff
+      m_Image: {fileID: 0}
+    - m_Text: 2F - Auditing Storage Files
+      m_Image: {fileID: 0}
+    - m_Text: 2F - CAUP CAD Room
+      m_Image: {fileID: 0}
+    - m_Text: 2F - CAUP Office
+      m_Image: {fileID: 0}
+    - m_Text: 2F - USEC Stockroom
+      m_Image: {fileID: 0}
+    - m_Text: 2F - AVR 2 - A Classroom
+      m_Image: {fileID: 0}
+    - m_Text: 2F - AVR 2 - B Classroom
+      m_Image: {fileID: 0}
+    - m_Text: 2F - DMST Office
+      m_Image: {fileID: 0}
+    - m_Text: 2F - AVR 1 - A Classroom
+      m_Image: {fileID: 0}
+    - m_Text: 2F - Left Wing CR Female
+      m_Image: {fileID: 0}
+    - m_Text: 2F - Left Wing CR Male
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

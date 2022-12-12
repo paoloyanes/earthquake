@@ -131,6 +131,10 @@ public class Objective1 : MonoBehaviour
                 while(getOutClass == true)
                 {
                     yield return new WaitForSeconds(30f);
+                    objSFX.Play();
+                    theObjective.SetActive(true);
+                    theObjective.GetComponent<Animation>().Play("ObjectiveDisplayAnim");
+                    theText.GetComponent<Text>().text = "Survive the incoming Earthquakes while looking for the Exit!";
                     finalObjective = true;
                 }
                 

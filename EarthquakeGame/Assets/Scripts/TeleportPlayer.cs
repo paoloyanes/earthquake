@@ -22,6 +22,10 @@ public class TeleportPlayer : MonoBehaviour
     [SerializeField]
     GameObject SecondRightWingFToilet, SecondRightWingMToilet, COAOffice, OfficeStaff, AuditStorageFiles, CAUP_CAD_Room, CAUPOffice, USECStockroom, AVR2AClassroom, AVR2BClassroom, DMSTOffice, AVR1AClassroom, SecondLeftWingFToilet, SecondLeftWingMToilet;
 
+    // Third Floor
+    [SerializeField]
+    GameObject ThirdRightWingFToilet, ThirdRightWingMToilet, GCA301, GCA302, GCA304, GCA305, GCA306, GCA307, DesignLab2, GCA308, GCA309, ThirdLeftWingFToilet, ThirdLeftWingMToilet;
+
     // 1st Test Locations
     Vector3 location01, location12, location17;
 
@@ -29,6 +33,10 @@ public class TeleportPlayer : MonoBehaviour
     Vector3 location1, location2, location3, location4, location5, location6, location7, location8, location9, location10, location11, location13, location14;
     // Second Floor
     Vector3 location15, location16, location18, location19, location20, location21, location22, location23, location24, location25, location26, location27, location28, location29;
+    // Third Floor
+    Vector3 location30, location31, location32, location33, location34, location35, location36, location37, location38, location39, location40, location41, location42;
+    
+    
     static public int teleportedLocation = 0;
 
     public bool isDone = false;
@@ -36,6 +44,7 @@ public class TeleportPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Test Floors
         location01 = startingLocation01.transform.position;
         location12 = startingLocation12.transform.position;
         location17 = startingLocation17.transform.position;
@@ -71,6 +80,21 @@ public class TeleportPlayer : MonoBehaviour
         location27 = AVR1AClassroom.transform.position;
         location28 = SecondLeftWingFToilet.transform.position;
         location29 = SecondLeftWingMToilet.transform.position;
+
+        // Third Floor
+        location30 = ThirdRightWingFToilet.transform.position;
+        location31 = ThirdRightWingMToilet.transform.position;
+        location32 = GCA301.transform.position;
+        location33 = GCA302.transform.position;
+        location34 = GCA304.transform.position;
+        location35 = GCA305.transform.position;
+        location36 = GCA306.transform.position;
+        location37 = GCA307.transform.position;
+        location38 = DesignLab2.transform.position;
+        location39 = GCA308.transform.position;
+        location40 = GCA309.transform.position;
+        location41 = ThirdLeftWingFToilet.transform.position;
+        location42 = ThirdLeftWingMToilet.transform.position;
         
     }
 
@@ -204,6 +228,61 @@ public class TeleportPlayer : MonoBehaviour
             }
 
             // Third Floor ==============================================================
+
+            else if (StateNameController.selectStartingLocationDropdown == 30)
+            {
+                PlayerStartingLocation(location30); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 31)
+            {
+                PlayerStartingLocation(location31); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 32)
+            {
+                PlayerStartingLocation(location32); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 33)
+            {
+                PlayerStartingLocation(location33); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 34)
+            {
+                PlayerStartingLocation(location34); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 35)
+            {
+                PlayerStartingLocation(location35); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 36)
+            {
+                PlayerStartingLocation(location36); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 37)
+            {
+                PlayerStartingLocation(location37); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 38)
+            {
+                PlayerStartingLocation(location38); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 39)
+            {
+                PlayerStartingLocation(location39); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 40)
+            {
+                PlayerStartingLocation(location40); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 41)
+            {
+                PlayerStartingLocation(location41); 
+            }
+            else if (StateNameController.selectStartingLocationDropdown == 42)
+            {
+                PlayerStartingLocation(location42); 
+            }
+
+
             else
             {
                 PlayerStartingLocation(location01);

@@ -39,7 +39,7 @@ public class PlayerMotor : MonoBehaviour
 
             if (crouching)
             {
-                //controller.height = Mathf.Lerp(controller.height, 1f, p);
+                //controller.height = Mathf.Lerp(controller.height, 2, p);
                 speed = 0;
                 studentModel.GetComponent<Animator>().SetBool("isWalkWithHandsUp", false);
                 isDropCoverHold = true;
@@ -110,7 +110,7 @@ public class PlayerMotor : MonoBehaviour
     {
         if (crouching)
         {
-            speed = 1;
+            speed = 0;
         }
         else
         {
